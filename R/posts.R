@@ -170,7 +170,7 @@ ct_parse_posts <- function(x, recursive = FALSE) {
     pb$tick()
     account <- tibble::as_tibble(
       p$account,
-      .name_repair = function(x) paste0("accout_", x)
+      .name_repair = function(x) paste0("account_", x)
     )
     statistics <- tibble::as_tibble(
       t(p$statistics),
